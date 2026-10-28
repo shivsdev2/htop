@@ -1,0 +1,245 @@
+
+htop on  main via C v16.2.1-gcc via 🌙 
+❯ ./autogen.sh && ./configure && make
+autoreconf: export WARNINGS=all
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: no obvious need to run autopoint
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: creating directory build-aux
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: configure.ac: no need to run autopoint (confirmed)
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:70: installing 'build-aux/compile'
+configure.ac:24: installing 'build-aux/config.guess'
+configure.ac:24: installing 'build-aux/config.sub'
+configure.ac:25: installing 'build-aux/install-sh'
+configure.ac:25: installing 'build-aux/missing'
+Makefile.am: installing './INSTALL'
+Makefile.am: installing 'build-aux/depcomp'
+autoreconf: configure.ac: not running make: --make not given
+autoreconf: Leaving directory '.'
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 0.01
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C23 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc option to support large files... none needed
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C23 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/param.h... yes
+checking for sys/time.h... yes
+checking for sys/utsname.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/mkdev.h... no
+checking for sys/sysmacros.h... yes
+checking for execinfo.h... yes
+checking for mbstate_t... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uid_t... yes
+checking for gid_t... yes
+checking for uint8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for alloc_size... yes
+checking for access... yes
+checking for nonnull... yes
+checking for returns_nonnull... yes
+checking for NaN support... yes
+checking for __builtin_ctz... yes
+checking for library containing ceil... -lm
+checking for library containing dlopen... none required
+checking for library containing clock_gettime... none required
+checking for dladdr... yes
+checking for faccessat... yes
+checking for fstatat... yes
+checking for host_get_clock_service... no
+checking for memfd_create... yes
+checking for openat... yes
+checking for readlinkat... yes
+checking for sched_getscheduler... yes
+checking for sched_setscheduler... yes
+checking for strnlen... yes
+checking for strchrnul... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for set_escdelay... no
+checking for getmouse... no
+checking for usable sched_setaffinity... yes
+checking for libunwind... no
+checking the include directory of libunwind.h... (not found)
+checking for library containing backtrace... none required
+checking the return type of backtrace... automatic (using __typeof__)
+checking for cplus_demangle in -liberty... no
+checking for cplus_demangle in -ldemangle... no
+checking for cap_init in -lcap... yes
+checking for sys/capability.h... yes
+checking for libnl-3.0... no
+checking for netlink/attr.h... no
+checking for netlink/handlers.h... no
+checking for netlink/msg.h... no
+checking for sensors/sensors.h... no
+checking whether the C compiler accepts -Wextra-semi-stmt... no
+checking whether the C compiler accepts -Wimplicit-int-conversion... no
+checking whether the C compiler accepts -Wnull-dereference... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating htop.1
+config.status: creating config.h
+config.status: executing depfiles commands
+
+  htop 3.6.0-dev
+
+  platform:                  linux (linux-gnu)
+  (Linux) proc directory:    /proc
+  (Linux) delay accounting:  no
+  (Linux) sensors:           no
+  (Linux) capabilities:      yes
+  unicode:                   
+  affinity:                  yes
+  backtrace:                 no
+  demangling:                no
+  hwloc:                     no
+  debug:                     no
+  static:                    no
+
+make  all-am
+make[1]: Entering directory '/home/shivank/htop'
+depbase=`echo htop.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DNDEBUG  -std=c99 -pedantic -Wall -Wcast-align -Wcast-qual -Wextra -Wfloat-equal -Wformat=2 -Winit-self -Wmissing-format-attribute -Wmissing-noreturn -Wmissing-prototypes -Wpointer-arith -Wshadow -Wstrict-prototypes -Wundef -Wunused -Wwrite-strings -Wnull-dereference -DSYSCONFDIR="\"/usr/local/etc\"" -I"./linux" -g -O2 -MT htop.o -MD -MP -MF $depbase.Tpo -c -o htop.o htop.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo Action.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -DNDEBUG  -std=c99 -pedantic -Wall -Wcast-align -Wcast-qual -Wextra -Wfloat-equal -Wformat=2 -Winit-self -Wmissing-format-attribute -Wmissing-noreturn -Wmissing-prototypes -Wpointer-arith -Wshadow -Wstrict-prototypes -Wundef -Wunused -Wwrite-strings -Wnull-dereference -DSYSCONFDIR="\"/usr/local/etc\"" -I"./linux" -g -O2 -MT Action.o -MD -MP -MF $depbase.Tpo -c -o Action.o Action.c &&\
+mv -f $depbase.Tpo $depbase.Po
+In file included from Object.h:14,
+                 from Row.h:16,
+                 from Settings.h:17,
+                 from CRT.h:14,
+                 from Panel.h:13,
+                 from Machine.h:17,
+                 from Header.h:13,
+                 from Action.h:13,
+                 from Action.c:10:
+RichString.h:37:18: error: unknown type name ‘chtype’; did you mean ‘CharType’?
+   37 | #define CharType chtype
+      |                  ^~~~~~
+RichString.h:44:4: note: in expansion of macro ‘CharType’
+   44 |    CharType* chptr;
+      |    ^~~~~~~~
+RichString.h:37:18: error: unknown type name ‘chtype’; did you mean ‘CharType’?
+   37 | #define CharType chtype
+      |                  ^~~~~~
+RichString.h:45:4: note: in expansion of macro ‘CharType’
+   45 |    CharType chstr[RICHSTRING_MAXLEN + 1];
+      |    ^~~~~~~~
+Action.c: In function ‘Action_pickFromVector’:
+Action.c:84:36: error: ‘COLS’ undeclared (first use in this function)
+   84 |    Panel_resize((Panel*)mainPanel, COLS, LINES - y - 1);
+      |                                    ^~~~
+Action.c:84:36: note: each undeclared identifier is reported only once for each function it appears in
+Action.c:84:42: error: ‘LINES’ undeclared (first use in this function)
+   84 |    Panel_resize((Panel*)mainPanel, COLS, LINES - y - 1);
+      |                                          ^~~~~
+Action.c:91:10: error: implicit declaration of function ‘beep’ [-Wimplicit-function-declaration]
+   91 |          beep();
+      |          ^~~~
+Action.c: In function ‘actionKill’:
+Action.c:539:7: error: implicit declaration of function ‘refresh’ [-Wimplicit-function-declaration]
+  539 |       refresh();
+      |       ^~~~~~~
+Action.c:544:7: error: implicit declaration of function ‘napms’ [-Wimplicit-function-declaration]
+  544 |       napms(500);
+      |       ^~~~~
+Action.c: In function ‘actionLsof’:
+Action.c:602:4: error: implicit declaration of function ‘clear’ [-Wimplicit-function-declaration]
+  602 |    clear();
+      |    ^~~~~
+Action.c: In function ‘actionTag’:
+Action.c:686:39: error: ‘KEY_DOWN’ undeclared (first use in this function)
+  686 |    Panel_onKey((Panel*)st->mainPanel, KEY_DOWN);
+      |                                       ^~~~~~~~
+Action.c: In function ‘addattrstr’:
+Action.c:762:4: error: implicit declaration of function ‘attrset’; did you mean ‘tzset’? [-Wimplicit-function-declaration]
+  762 |    attrset(attr);
+      |    ^~~~~~~
+      |    tzset
+Action.c:763:4: error: implicit declaration of function ‘addstr’ [-Wimplicit-function-declaration]
+  763 |    addstr(str);
+      |    ^~~~~~
+Action.c: In function ‘actionHelp’:
+Action.c:770:24: error: ‘LINES’ undeclared (first use in this function)
+  770 |    for (int i = 0; i < LINES - 1; i++)
+      |                        ^~~~~
+Action.c:771:7: error: implicit declaration of function ‘mvhline’ [-Wimplicit-function-declaration]
+  771 |       mvhline(i, 0, ' ', COLS);
+      |       ^~~~~~~
+Action.c:771:26: error: ‘COLS’ undeclared (first use in this function)
+  771 |       mvhline(i, 0, ' ', COLS);
+      |                          ^~~~
+Action.c:775:4: error: implicit declaration of function ‘mvaddstr’ [-Wimplicit-function-declaration]
+  775 |    mvaddstr(line++, 0, "htop " VERSION " - " COPYRIGHT);
+      |    ^~~~~~~~
+Action.c: In function ‘Action_setBindings’:
+Action.c:1015:9: error: implicit declaration of function ‘KEY_F’; did you mean ‘KEY_ALT’? [-Wimplicit-function-declaration]
+ 1015 |    keys[KEY_F(1)] = actionHelp;
+      |         ^~~~~
+      |         KEY_ALT
+make[1]: *** [Makefile:1589: Action.o] Error 1
+make[1]: Leaving directory '/home/shivank/htop'
+make: *** [Makefile:1094: all] Error 2
+
+htop on  main via C v16.2.1-gcc via 🌙 took 7s 
+❯ 
